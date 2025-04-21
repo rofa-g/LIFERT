@@ -1,0 +1,50 @@
+R STUDIO VERSION
+
+RStudio 2024.09.1+394 "Cranberry Hibiscus" Release (a1fe401fc08c232d470278d1bc362d05d79753d9, 2024-11-03) for windows
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) RStudio/2024.09.1+394 Chrome/124.0.6367.243 Electron/30.4.0 Safari/537.36, Quarto 1.5.57
+
+
+
+R SESSION INFO
+
+
+R version 4.3.3 (2024-02-29 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19045)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=English_United Kingdom.utf8  LC_CTYPE=English_United Kingdom.utf8   
+[3] LC_MONETARY=English_United Kingdom.utf8 LC_NUMERIC=C                           
+[5] LC_TIME=English_United Kingdom.utf8    
+
+time zone: Europe/Amsterdam
+tzcode source: internal
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] scales_1.3.0        forcats_1.0.0       ggtext_0.1.2        ggpubr_0.6.0       
+ [5] dplyr_1.1.4         ggplot2_3.5.0       webshot2_0.1.1.9000 dqrng_0.3.2        
+ [9] magick_2.8.3        kableExtra_1.4.0    MCMCglmm_2.35       ape_5.7-1          
+[13] coda_0.19-4.1       Matrix_1.6-5        data.table_1.15.2  
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.4      tensorA_0.36.2.1  xfun_0.42         bslib_0.6.1       websocket_1.4.1  
+ [6] processx_3.8.4    rstatix_0.7.2     lattice_0.22-5    vctrs_0.6.5       tools_4.3.3      
+[11] ps_1.7.6          generics_0.1.3    tibble_3.2.1      fansi_1.0.6       pkgconfig_2.0.3  
+[16] lifecycle_1.0.4   cubature_2.1.0    farver_2.1.1      compiler_4.3.3    stringr_1.5.1    
+[21] textshaping_0.3.7 munsell_0.5.0     chromote_0.2.0    carData_3.0-5     htmltools_0.5.7  
+[26] sass_0.4.9        crayon_1.5.2      later_1.3.2       pillar_1.9.0      car_3.1-2        
+[31] jquerylib_0.1.4   tidyr_1.3.1       cachem_1.0.8      abind_1.4-5       nlme_3.1-164     
+[36] commonmark_1.9.1  tidyselect_1.2.1  digest_0.6.35     stringi_1.8.3     purrr_1.0.2      
+[41] splines_4.3.3     labeling_0.4.3    fastmap_1.1.1     grid_4.3.3        colorspace_2.1-0 
+[46] cli_3.6.2         magrittr_2.0.3    utf8_1.2.4        broom_1.0.5       corpcor_1.6.10   
+[51] withr_3.0.0       promises_1.3.0    backports_1.4.1   rmarkdown_2.26    ggsignif_0.6.4   
+[56] ragg_1.3.0        evaluate_0.23     knitr_1.45        viridisLite_0.4.2 mgcv_1.9-1       
+[61] markdown_1.12     rlang_1.1.3       gridtext_0.1.5    Rcpp_1.0.12       glue_1.7.0       
+[66] xml2_1.3.6        pkgload_1.3.4     svglite_2.1.3     rstudioapi_0.15.0 jsonlite_1.8.8   
+[71] R6_2.5.1          systemfonts_1.0.6

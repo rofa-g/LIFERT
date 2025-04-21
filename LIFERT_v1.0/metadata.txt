@@ -1,0 +1,148 @@
+--CODEBOOKS--
+
+-GGS-
+
+The codebook/metadata for the Dutch GGS I Waves 1, 2, and 3 can be downloaded from: 
+
+https://ggpsurvey.ined.fr/documents/Study_Documentation/GGS_W1-V.4.3.&W2-V.1.3W3-V1.0_Netherlands.pdf
+
+
+-LISS-
+
+Waves 1 to 15
+
+Family and Household can be found here (separate codebook for each wave)
+
+https://www.dataarchive.lissdata.nl/study-units/view/10
+
+Background variables
+
+March 2007 to June 2023
+
+https://www.dataarchive.lissdata.nl/hosted-files/download/7590
+
+
+-HFD-
+
+Explanatory notes
+
+https://www.humanfertility.org/Data/ExplanatoryNotes
+
+
+
+--VARIABLES--
+
+
+
+-GGS-
+
+The variables used from GGS were: 
+
+arid: Respondent ID
+
+acountry: Country where the survey was conducted
+
+asex: The biological sex of the respondent
+
+abyear: The year of birth of the respondent
+
+aeduc: Highest Education Level of Respondent
+
+numbiol: number of biological children the woman has had
+
+numpartnerships: Total number of partnerships
+
+nummarriage:Total number of marriages
+
+numdivorce: Total number of partnerships ending in divorce
+
+numdissol: Total number of partnerships dissolutions
+
+a334y_1 - a334y_7: Yr starting living together with partner 1 - 7
+
+a335a_1 - a335a_7: Was married or not with partner 1 - 7
+
+a344y_1 - a344y_7: Yr of ending of partnership 1 - 7
+
+a622: Intention to have a child during next 3 yrs
+
+a626: How many more children R wants to have
+
+a372bAgeR: R's age of marrying current spouse (consolidated)
+
+a302bTdiff: Time elapsed (years) between start of relationship and marriage (consolidated)
+
+
+
+
+-LISS-
+
+The variable names differ between waves starting from the letter 'a' and the year of the first survey, in this case '08'
+
+So the age of the respondent in Wave 1 of the Family and Household data is cf08a004, but is written below as '004' as the name changes for each wave 
+and the prefix changes for each of the sub-questionnaires so for Work and Schooling the age of the respondent in Wave 1 is named 'cw08a004',
+but the number (three last digits) of the variable (question) remains the same across waves. 
+
+
+BACKGROUND VARIABLES
+
+nomem_encr: respondent ID
+
+geslacht: sex of the respondent
+
+gebjaar: year of birth of the respondent
+
+oplmet: Highest level of education with diploma
+
+
+FAMILY AND HOUSHOLD  
+
+nomem_encr: respondent ID
+
+003: Gender of respondent
+
+1 male
+2 female
+
+004: Age of respondent
+
+024: Do you currently have a partner?
+
+025: Do you live together with this partner?
+
+028: In what year did the relationship with your partner begin?
+
+029: In what year did you start living together with your partner?
+
+030: Are you married to this partner?
+
+031: In what year did you marry?
+
+033: Were you married to another partner before?
+
+034: Did you separate or did your previous partner pass away?
+
+098 - 112: For each child, please indicate below whether you are the biological parent, the step parent, the adoptive parent or foster parent.
+
+128: Do you think you will have [more] children in the future?
+
+129: How many [more] children do you think you will have in the future?
+
+403: Last year you indicated that you had a different partner.
+Did you separate from your previous partner, or did your previous partner pass away?
+
+404: Last year you indicated having a partner at the time.
+Did you separate, or did your partner pass away?
+
+
+
+-HUMAN FERTILITY DATABASE-
+
+tfrVHbo: Completed Cohort Fertility Rates
+
+pprVHbo: Parity Progression Ratios
+
+mabVHbo: Mean ages at birth
+
+
+

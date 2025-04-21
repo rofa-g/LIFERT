@@ -1,0 +1,150 @@
+---
+title: "Untitled"
+format:
+  html:
+    mermaid-format: png
+editor: visual
+---
+
+```         
+```
+
+```{mermaid}
+%%{ init: {
+    'themeVariables':
+        { 'fontSize': '20px', 'fontFamily': 'serif',
+          "mainBkg" : "#c2e3fe",
+          "nodeBorder" : "#000000",
+          'textColor': '#000000'}
+} }%%
+flowchart TB
+
+S["Single (never cohabited)"]
+NC[Never cohabits]
+C[Cohabiting]
+FC[First cohabitation]
+M[Married]
+SP[Separated]
+D[Divorced]
+
+
+S -->|"RNG <= First cohabitation share"|FC 
+S -->|"RNG > First cohabitation share"|NC 
+FC-->|"1. RNG<sub>1</sub> > Marriage share
+       2. RNG<sub>2</sub> <= Separation share
+       3. RNG<sub>3</sub> <= P(Separation)"|SP
+FC-->|"1. RNG<sub>1</sub> <= Marriage share
+       2. RNG<sub>2</sub> <= P(Marriage)"|M
+M-->|"RNG<sub>1</sub> <= Divorce share
+      RNG<sub>2</sub> <= P(Divorce)"|D
+D-->|"RNG<sub>1</sub> <= Re-partner share 
+      RNG<sub>2</sub> <= P(Re-partner)"|C
+C-->|"1. RNG<sub>1</sub> > Marriage share
+      2. RNG<sub>2</sub> <= Sep. share
+      3. RNG<sub>3</sub> <= P(Separation)"|SP
+C-->|"1. RNG<sub>1</sub> <= Marriage share
+      2. RNG<sub>2</sub> <= P(Marriage)"|M
+SP-->|"RNG<sub>1</sub> <= Re-partner share 
+       RNG<sub>2</sub> <= P(Re-partner)"|C
+
+
+
+
+```
+
+\newpage
+
+\KOMAoptions{paper=portrait,pagesize}\recalctypearea
+
+```{mermaid}
+
+%%{ init: {
+    'themeVariables':
+        { 'fontSize': '23px', 'fontFamily': 'serif',
+          "mainBkg" : "#c2e3fe",
+          "nodeBorder" : "#000000",
+          'textColor': '#000000'}
+} }%%
+
+flowchart TB
+
+I[Intercourse]
+C[Intended<br>conception]
+M[Miscarriage]
+A[Abortion]
+STR[Sterility]
+UI[Unintended<br>conception]
+N[Non-susceptible]
+L[Live birth]
+
+
+
+
+I-->|"RNG <= Fecundability"|C
+I-->|"Spacing < Intended spacing | Stopping == TRUE <br>RNG <= Fecundability"|UI
+I-->|"Fecundability = 0<br>Age = 55"|STR
+
+C--->|"RNG >= P(IUM)"|L
+UI--->|"RNG >= P(IUM)"|L
+
+C-->|"RNG < P(IUM)"|M
+UI-->|"RNG<sub></sub> > P(Abortion)<br>RNG < P(IUM)"|M
+
+L-->|"sample(postpartum)"|N
+M-->|"sample(miscarriage month) + 1 month"|N
+A-->|"sample(abortion month) + 1 month"|N
+
+UI-->|"RNG <= P(Abortion)"|A
+
+N-->I
+
+
+```
+
+\newpage
+
+\KOMAoptions{paper=portrait,pagesize}\recalctypearea
+
+Add the location of the simulation folder before '/LIFERT_v1.0/plots/logos/'. So if you are using Windows and the folder is located directly on your main drive then add 'C:' in the mermaid code below before each '/LIFERT_v1.0/plots/logos/' and after the two '//' (using the replace function in RStudio).
+
+```{mermaid}
+
+%%{ init: {
+    'themeVariables':
+        { 'fontSize': '20px', 'fontFamily': 'serif',
+          "mainBkg" : "#c2e3fe",
+          "nodeBorder" : "#000000",
+          'textColor': '#000000'}
+} }%%
+
+flowchart TB
+
+
+
+IC[<b>Individual characteristics</b><br><br>Educational attainment<br>Intended family size<br><br><img src='///LIFERT_v1.0/plots/logos/ggp_logo.jpg' width='70' height='70' /><img src='///LIFERT_v1.0/plots/logos/liss_new_logo.png' width='70' height='70' />]
+
+PDU[<b>Union parameters<br>& distributions</b><br><br>Cohabitation & Separation<br>Marriage & Divorce<br>Re-partnering<br><br><img src='///LIFERT_v1.0/plots/logos/ggp_logo.jpg' width='70' height='70' /><img src='///LIFERT_v1.0/plots/logos/liss_new_logo.png' width='70' height='70' /><img src='///LIFERT_v1.0/plots/logos/cbs_logo.png' width='70' height='70' />]
+
+UF[<b>Union formation<br>simulation</b><br><br>Appendix figure 1]
+
+UT[<b>Union trajectories</b><br><br>Age 15 to 55, monthly]
+
+PDR["<b>Reproduction parameters<br>& distributions</b><br><br>Enrolment in education<br>Fecundability (incl. sterility)<br>Intrauterine mortality<br>Intended spacing<br>Contraception<br>Abortion"<br><br><img src='///LIFERT_v1.0/plots/logos/ined_logo.jpg' width='85' height='70' /><img src='///LIFERT_v1.0/plots/logos/mvws_logo.png' width='70' height='70' /><img src='///LIFERT_v1.0/plots/logos/hfd_logo.png' width='85' height='70' /><img src='///LIFERT_v1.0/plots/logos/cbs_logo.png' width='70' height='70' />]
+
+RP["<b>Reproductive process<br>simulation</b><br><br>Age 15 to 55, monthly<br><br>Appendix figure 2"]
+
+RL[<b>Reproductive life courses</b><br><br>Model validation<br><img src='///LIFERT_v1.0/plots/logos/hfd_logo.png' width='85' height='70' /><img src='///LIFERT_v1.0/plots/logos/cbs_logo.png' width='70' height='70' />]
+
+
+IC  ==> UF
+PDU -.-> UF
+
+UF  ==> UT
+
+PDR -.-> RP
+UT  ==> RP
+
+RP  ==> RL
+
+
+```
